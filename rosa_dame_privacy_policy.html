@@ -6,86 +6,130 @@
     <title>Privacy Policy - Rosa Dame</title>
     <style>
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            color: #333333;
+            /* Matches 'OriyaMN-Regular' fallback chain with clean line height */
+            font-family: "Oriya MN", OriyaMN, "Times New Roman", serif;
+            line-height: 24px;
+            font-size: 14px;
+            color: #444444;
             max-width: 800px;
             margin: 0 auto;
-            padding: 40px 20px;
+            padding: 40px 24px;
             background-color: #ffffff;
+            -webkit-font-smoothing: antialiased;
         }
         .header {
             text-align: center;
-            border-bottom: 2px solid #ad9277;
-            padding-bottom: 20px;
-            margin-bottom: 30px;
+            margin-bottom: 40px;
         }
         h1 {
-            color: #ad9277;
-            font-size: 28px;
+            /* Matches React Native header styles and font settings */
+            font-family: "Raleway", "Helvetica Neue", Arial, sans-serif;
+            font-weight: bold;
+            color: #000000;
+            font-size: 24px;
             letter-spacing: 2px;
-            margin: 0;
+            margin: 0 0 4px 0;
             text-transform: uppercase;
         }
+        .header p {
+            font-family: "Raleway", "Helvetica Neue", Arial, sans-serif;
+            font-weight: bold;
+            text-align: center; 
+            margin: 0; 
+            color: #000000; 
+            font-size: 14px;
+            letter-spacing: 1px;
+        }
         h2 {
-            color: #ac9177;
-            font-size: 20px;
+            /* Exact match for styles.sectionHeader */
+            font-family: "Raleway", "Helvetica Neue", Arial, sans-serif;
+            font-weight: bold;
+            color: #000000;
+            font-size: 18px;
             margin-top: 30px;
-            border-left: 4px solid #ad9277;
-            padding-left: 10px;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            border-bottom: 1px solid #EBE2D0;
+            padding-bottom: 4px;
         }
         h3 {
-            color: #333333;
-            font-size: 16px;
-            margin-top: 20px;
+            /* Exact match for styles.subHeading */
+            font-family: "Raleway", "Helvetica Neue", Arial, sans-serif;
+            font-weight: bold;
+            color: #3E332E;
+            font-size: 15px;
+            margin-top: 15px;
             margin-bottom: 5px;
         }
         p {
-            margin-bottom: 15px;
-            text-align: justify;
+            margin-top: 0;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+        strong {
+            /* Exact match for styles.bold */
+            font-family: "Raleway", "Helvetica Neue", Arial, sans-serif;
+            font-weight: bold;
+            color: #000000;
         }
         ul {
-            margin-top: 5px;
-            margin-bottom: 15px;
-            padding-left: 20px;
+            margin-top: 0;
+            margin-bottom: 10px;
+            padding-left: 10px;
+            list-style-type: none; /* Replaces native bullets to style like your custom text bullets */
         }
         li {
             margin-bottom: 5px;
+            position: relative;
+            padding-left: 15px;
         }
+        li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #444444;
+        }
+        /* Aligns your account deletion block smoothly with the brand theme */
         .highlight-box {
-            background-color: #fef2de;
-            border: 1px solid #ad9277;
-            padding: 20px;
-            border-radius: 4px;
-            margin: 25px 0;
+            background-color: #FAF7F0;
+            border: 1px solid #EBE2D0;
+            padding: 24px;
+            margin: 30px 0;
         }
         .highlight-box h2 {
             margin-top: 0;
-            border-left: none;
-            padding-left: 0;
-            color: #ad9277;
+            border-bottom: 1px solid #EBE2D0;
+            padding-bottom: 4px;
         }
+        /* Exact match for styles.contact-info setup */
+        .contact-info {
+            background-color: #FAF7F0;
+            padding: 16px;
+            margin: 15px 0;
+            border-left: 2px solid #EBE2D0;
+        }
+        .contact-info p {
+            margin-bottom: 6px;
+        }
+        .contact-info p:last-child {
+            margin-bottom: 0;
+        }
+        /* Exact match for styles.link */
+        a {
+            color: #000000;
+            text-decoration: underline;
+        }
+        a:hover {
+            color: #3E332E;
+        }
+        /* Exact match for styles.closingText */
         .footer-text {
             font-style: italic;
             text-align: center;
             margin-top: 40px;
-            color: #666666;
-            border-top: 1px solid #eeeeee;
-            padding-top: 20px;
-        }
-        .contact-info {
-            background-color: #f9f9f9;
-            padding: 15px;
-            border-radius: 4px;
-            border-left: 4px solid #ad9277;
-        }
-        a {
-            color: #ad9277;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        a:hover {
-            text-decoration: underline;
+            color: #000000;
+            padding: 20px 10px 0 10px;
+            line-height: 22px;
         }
     </style>
 </head>
@@ -93,15 +137,15 @@
 
     <div class="header">
         <h1>Rosa Dame</h1>
-        <p style="text-align: center; margin-top: 5px; color: #666666; font-size: 14px;">PRIVACY POLICY</p>
+        <p>PRIVACY POLICY</p>
     </div>
 
     <p>At <strong>Rosa Dame</strong>, we value your trust above all else. Protecting your privacy is not just a legal requirement for us — it is a commitment to treat your personal information with integrity, respect, and the highest level of care.</p>
     
-    <p>This Privacy Policy explains how we collect, use, and safeguard your information when you interact with us, whether through our website, social media platforms, or while making a purchase.</p>
+    <p>This Privacy Policy explains how we collect, use, and safeguard your information when you interact with us, whether through our website, social media platforms, or while using the Rosa Dame mobile app.</p>
 
     <h2>Information We Collect</h2>
-    <p>When you shop with Rosa Dame, we may collect the following information to provide you with a seamless and personalized experience:</p>
+    <p>When you interact with Rosa Dame, we may collect the following information to provide you with a seamless and personalized experience:</p>
     
     <h3>Personal Details</h3>
     <ul>
@@ -117,7 +161,15 @@
     <h3>Browsing & Technical Data</h3>
     <ul>
         <li>Non-identifiable information such as browser type, IP address, device type, and browsing patterns.</li>
-        <li>Cookies and similar technologies to enhance your shopping experience, analyze website traffic, and improve our services.</li>
+        <li>Cookies and similar technologies to enhance your website experience and improve our services.</li>
+    </ul>
+
+    <h3>Mobile App Data</h3>
+    <ul>
+        <li>Device information such as device model, operating system, and unique device identifiers.</li>
+        <li>IP address and location data to provide regional content.</li>
+        <li>App usage analytics through trusted services like Google Firebase Analytics to improve app performance and understand user behavior.</li>
+        <li>Push notification preferences if you opt-in.</li>
     </ul>
 
     <h2>Why We Collect Your Information</h2>
@@ -126,7 +178,9 @@
         <li>Process and deliver your orders.</li>
         <li>Provide customer support and manage exchanges or after-sales services.</li>
         <li>Personalize your shopping experience and offer relevant product recommendations.</li>
+        <li>Provide regional content based on your location (IP-based).</li>
         <li>Share updates about new collections, offers, or brand announcements (only if you opt-in).</li>
+        <li>Analyze app performance and usage to improve our services.</li>
     </ul>
 
     <h2>How We Protect Your Data</h2>
